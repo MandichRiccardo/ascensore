@@ -1,12 +1,12 @@
-#include <String>
-int getInt(String stringa);
-void scambiaInt(int &a, int &b);
+#include <string>
+int getIntero(string stringa);
+void scambiaIntero(int &a, int &b);
 
-double getDouble(String stringa);
+double getDouble(string stringa);
 void scambiaDouble(double &a, double &b);
 
-bool getBoolean(String stringa);
+bool getBoolean(string stringa);
 void scambiaBoolean(bool &a, bool &b);
 
-String getString(String stringa);
-void scambiaStringString(String &a, String &b);
+string getString(string stringa);
+void scambiaStringString(string &a, string &b);

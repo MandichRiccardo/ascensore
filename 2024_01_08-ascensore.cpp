@@ -1,10 +1,11 @@
+using namespace std;
 #include <iostream>
+#include <string>
 #include "interazione.h"
 #include "interazione.cpp"
-using namespace std;
 int main(){
     bool running = true;
-    String output;
+    string output;
     output += "inserisci 3 per terminare il programma o il numero relativo al tasto dell'ascensore:\n";
     output += "0)\tT\n";
     output += "1)\t1° piano\n";
@@ -13,7 +14,7 @@ int main(){
     while (running){
         int scelta = 0;
         if(scelta == ascensore){
-            scelta = input(output);
+            scelta = getIntero(output);
         }
         switch(scelta){
             case 0:
@@ -55,6 +56,10 @@ int main(){
                     cout<<"ERRORE: sono al piano "<<ascensore<<"e devo andare al piano "<<scelta<<"il che non è previsto"<<endl;
                 }
                 break;
+            case 3:
+                running = false;
+                break;
         }
+        cout<<"ho terminato il programma"<<endl;
     }
 }

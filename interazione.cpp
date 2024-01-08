@@ -1,14 +1,5 @@
-#include <String>
-int getInt(String stringa){
-    return getDouble(stringa);
-}
-void scambiaInt(int &a, int &b){
-    int c = a;
-    a = b;
-    b = c;
-}
-
-double getDouble(String stringa){
+using namespace std;
+double getDouble(string stringa){
     std::cout<<stringa<<endl;
     double ritorno;
     cin>>ritorno;
@@ -20,8 +11,17 @@ void scambiaDouble(double &a, double &b){
     b = c;
 }
 
-bool getBoolean(String stringa){
-    return getInt(stringa) != 0;
+int getIntero(string stringa){
+    return getDouble(stringa);
+}
+void scambiaIntero(int &a, int &b){
+    int c = a;
+    a = b;
+    b = c;
+}
+
+bool getBoolean(string stringa){
+    return getIntero(stringa) != 0;
 }
 void scambiaBoolean(bool &a, bool &b){
     bool c = a;
@@ -29,13 +29,13 @@ void scambiaBoolean(bool &a, bool &b){
     b = c;
 }
 
-String getString(String stringa){
+string getString(string stringa){
     std::cout<<stringa<<endl;
-    cin.getline(stringa);
+    cin>>stringa;
     return stringa;
 }
-void scambiaStringString(String &a, String &b){
-    String c = a;
+void scambiaString(string &a, string &b){
+    string c = a;
     a = b;
     b = c;
 }
