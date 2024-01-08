@@ -60,6 +60,8 @@ int main(){
                 running = false;
                 break;
         }
-        cout<<"ho terminato il programma"<<endl;
+        if(scelta != 3)
+            cout<<"sono al piano "<<ascensore<<" e devo andare al piano "<<scelta<<endl;
     }
+        cout<<"ho terminato il programma"<<endl;
 }
