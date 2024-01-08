@@ -8,9 +8,9 @@ int main(){
     bool running = true;
     string output;
     output += "inserisci 3 per terminare il programma o il numero relativo al tasto dell'ascensore:\n";
-    output += "0)\tT\n";
-    output += "1)\t1° piano\n";
-    output += "2)\t2° piano\n";
+    output += "0)\tpiano terra\n";
+    output += "1)\t1 piano\n";
+    output += "2)\t2 piano\n";
     int ascensore = 0;
     int scelta = 0;
     while (running){
@@ -64,5 +64,5 @@ int main(){
         if(scelta != 3)
             cout<<"sono al piano "<<ascensore<<" e devo andare al piano "<<scelta<<endl;
     }
-        cout<<"ho terminato il programma"<<endl;
+    cout<<"ho terminato il programma"<<endl;
 }
