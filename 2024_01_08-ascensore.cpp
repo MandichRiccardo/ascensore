@@ -1,8 +1,9 @@
-using namespace std;
 #include <iostream>
 #include <string>
-#include "interazione.h"
 #include "interazione.cpp"
+
+using namespace std;
+
 int main(){
     bool running = true;
     string output;
@@ -11,10 +12,10 @@ int main(){
     output += "1)\t1° piano\n";
     output += "2)\t2° piano\n";
     int ascensore = 0;
+    int scelta = 0;
     while (running){
-        int scelta = 0;
         if(scelta == ascensore){
-            scelta = getIntero(output);
+            scelta = input(output);
         }
         switch(scelta){
             case 0:
@@ -23,7 +24,7 @@ int main(){
                 }else if(ascensore == 1){
                     cout<<"vado al piano terra"<<endl;
                     ascensore = 0;
-                }else if(ascensore = 2){
+                }else if(ascensore == 2){
                     cout<<"vado al primo piano"<<endl;
                     ascensore = 1;
                 }else{

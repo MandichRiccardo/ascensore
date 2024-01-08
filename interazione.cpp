@@ -13,7 +13,7 @@ void scambiaDouble(double &a, double &b){
     b = c;
 }
 
-int getIntero(string stringa){
+int input(string stringa){
     return getDouble(stringa);
 }
 void scambiaIntero(int &a, int &b){
@@ -23,7 +23,7 @@ void scambiaIntero(int &a, int &b){
 }
 
 bool getBoolean(string stringa){
-    return getIntero(stringa) != 0;
+    return input(stringa) != 0;
 }
 void scambiaBoolean(bool &a, bool &b){
     bool c = a;
