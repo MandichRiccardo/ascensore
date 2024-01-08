@@ -1,3 +1,5 @@
+#include <iostream>
+#include <string>
 using namespace std;
 double getDouble(string stringa){
     std::cout<<stringa<<endl;
@@ -30,7 +32,7 @@ void scambiaBoolean(bool &a, bool &b){
 }
 
 string getString(string stringa){
-    std::cout<<stringa<<endl;
+    cout<<stringa<<endl;
     cin>>stringa;
     return stringa;
 }
