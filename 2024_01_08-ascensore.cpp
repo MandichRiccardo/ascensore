@@ -5,7 +5,7 @@
 using namespace std;
 
 int main(){
-bool running = true;                            //variabile che serve a far andare avanti il programma
+    bool running = true;                        //variabile che serve a far andare avanti il programma
     string output;                              //stringa in cui vado ad immagazzinare il tastierino per poi chedere in input il tasto
     output += "inserisci 3 per terminare il programma o il numero relativo al tasto dell'ascensore:\n";
     output += "0)\tpiano terra\n";
